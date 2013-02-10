@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: アプリ | ［わ］ watura.me]]></title>
+  <link href="http://watura.github.com/blog/categories/アプリ/atom.xml" rel="self"/>
+  <link href="http://watura.github.com/"/>
+  <updated>2013-02-10T20:43:55+09:00</updated>
+  <id>http://watura.github.com/</id>
+  <author>
+    <name><![CDATA[Wataru Nishimoto]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Slate: Mac用Window Manager]]></title>
+    <link href="http://watura.github.com/blog/2013/02/10/slate/"/>
+    <updated>2013-02-10T19:33:00+09:00</updated>
+    <id>http://watura.github.com/blog/2013/02/10/slate</id>
+    <content type="html"><![CDATA[<p>2013年まだ初まって2ヶ月もたっていないのですが，今年一番のアプリと出会ってしまったかもしれません．</p>
+
+<h2>Slate</h2>
+
+<blockquote><p>Slate is a window management application similar to Divvy and SizeUp (except better and free!). Originally written to replace them due to some limitations in how each work, it attempts to overcome them by simply being extremely configurable. As a result, it may be a bit daunting to get configured, but once it is done, the benefit is huge.</p></blockquote>
+
+<p>一言でいうと<a href="https://github.com/jigish/slate">slate</a>はMac用のWindow Managerの一つです．</p>
+
+<h2>Window Manager</h2>
+
+<p>Window Managerというのはアプリをどうやって画面に表示するのか，どのような操作を可能にするのかということなどを決定しているアプリケーションになります．
+仮想デスクトップ(spacesとか)もwidnwo managerの一種であると考えられます．
+なんて呼ぶのかは知らないのですが，widnowsで画面の端にウィンドウをドラッグしたら全画面や半分などに変更してくれる機能なのはwindow managerの機能の一つです．</p>
+
+<p>Window Managerは主にLinuxで大活躍しているアプリで，MacやWindowsでは基本的にOSを作った会社,AppleやMicrosoftの用意したものを使います．</p>
+
+<p>しかし，Linuxのようにシステムの奥深くまで入りこんでいるようなアプリケーションではなく画面の大きさや場所の移動などを操作するためのアプリがMacやWindowsにはあります．</p>
+
+<p>例えば, <a href="http://www.irradiatedsoftware.com/sizeup/">SizeUp</a>, <a href="http://mizage.com/divvy/">Divvy</a>などがMacでは有名です．</p>
+
+<h2>どうして今年一番だと思っているのか</h2>
+
+<p>まぁ，SizeUpもDivvyも見てもらえばわかるようにシェアウエアです．</p>
+
+<p>ケチな私はこの程度の利便性のためにお金を払いたくありません．だから，SizeUpもDivvyも使えません．</p>
+
+<p>Slateはオープンソースで開発されており無料で使えます．</p>
+
+<p>だから素晴しいアプリであるというのは冗談です．</p>
+
+<h3>Hacker用</h3>
+
+<p>SlateはHackerのためのMac用Window Managerなどと言われていたりします．
+Slateはほぼ全ての操作をキーボードでやります．
+GUIはほとんど何も用意されておらず，設定はテキストエディタで設定ファイルを開いて手作業でいじくりまわして設定します．
+基本的には<code>bind [SHORTCUT] [ORDER] [PARAMS]</code>みたいなかんじでちまちま書いていきます．
+ただそれだけならば，ただのめんどくさいアプリでしかないのですが,
+javascriptで設定を書けるそうです．</p>
+
+<p>jsで書けることで何が起るのか，まだjsの設定ファイルは試してないので私にはわかりません．</p>
+
+<h3>高性能</h3>
+
+<p>まだ完璧とまではいえないのですが，かなり自由にキーボードショートカットを設定できます．</p>
+
+<p>単純なキーの組合せだけではなく，連続したキーの組合せによる実行もできます．</p>
+
+<p>今は私はCtrl-s してから他のキーを押すというショートカットをだいたいあてはめています．</p>
+
+<p>また，windowの大きさや並べかえだけではなくアプリケーションスイッチャーの機能もあります．(cmd+tabのような)</p>
+
+<p>特定の組合せをaliasとして設定したり，連続して実行できるようにしたり色々できて私には理解できないレベルにまでイロイロデキルヨウデス．</p>
+
+<h3>モニタ検出</h3>
+
+<p>私は大学(4画面)，電車内(1画面)，家(1または2画面)で主にパソコンを触っています． そのため，各環境に移ったさいに画画面の配置を変更する必要があります．
+そのそれぞれのモニタの大きさなどを検出させて自動で画面の位置や大きさを変更させるような機能があります．
+layoutと呼ばれているようです．</p>
+
+<h3>ほかにもイロイロ</h3>
+
+<p>Divvyのようにマウスで大きさを変更できる画面や，cmd+tabを改良する機能，モニタ間を移動させる機能などなど私には理解しきれていないレベルで色々な機能があります．</p>
+
+<p>本当はもっと詳しく一つ一つの機能を説明したかったのですが，まだ理解しきれていない部分が多くあるためざっっと概要を示すような感じになってしまいました．</p>
+
+<p>たぶん，もうすこしslateについて理解してきたら細かいまとめを書こうと考えています．</p>
+
+<p>ユーザにはあまり優しくないインタフェースのアプリです． しかし，その欠点を補った上にお釣りが来そうなほど可能性のあるアプリだと思います．</p>
+
+<p>絶賛開発中なようなので，今後はもうすこし優しいアプリになることを期待しておきたいと思います．</p>
+
+<p>日進月歩の私の<a href="https://github.com/watura/dotFiles/blob/master/.slate">.slate(設定ファイル)</a>です．</p>
+]]></content>
+  </entry>
+  
+</feed>

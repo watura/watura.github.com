@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://watura.github.com/sitemap.xml 
